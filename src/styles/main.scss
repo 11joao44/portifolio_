@@ -12,8 +12,13 @@
     color: #ECECF1;
 }
 
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
 body {
-  background-image: url(../images/hero.jpg);
+  background-image: url(/dist/images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -29,10 +34,6 @@ body {
   }
 
 /* Estilo da Scrollbar */
-
-html {
-  scroll-behavior: smooth;
-}
 
 ::-webkit-scrollbar {
   width: 10px;
