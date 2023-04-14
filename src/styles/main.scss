@@ -9,11 +9,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: variaveis.$colorTextDefault;
+    color: #ECECF1;
 }
 
 body {
-  background: variaveis.$colorGradientHome;
+  background-image: url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
