@@ -13,7 +13,7 @@
 }
 
 body {
-  background-image: url(./dist/images/hero.jpg);
+  background: variaveis.$colorBackground;
   background-repeat: no-repeat;
   background-size: cover;
 
