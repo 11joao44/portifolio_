@@ -227,6 +227,7 @@
       margin-top: -20%;
       margin-left: 8.5%;
       transform: scale(60%); 
+      margin-bottom: 30px;
     }
 
     &__content {
@@ -235,7 +236,7 @@
       &__branding {
 
         &__social {
-          transform: scale(70%);
+          display: none;
         }
 
         &__text-1 {

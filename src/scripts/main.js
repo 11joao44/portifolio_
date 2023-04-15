@@ -118,6 +118,10 @@ $(document).ready(function () {
     $('.carrousel').slideDown('slow');
     $('.tx-start').fadeOut(500);
   });
+
+  $('.mobile-menu').click(function () {
+    $('nav').slideToggle()
+  })
 });
 
 
