@@ -1,9 +1,9 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: rgba(255, 255, 255, 0);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(2px);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
@@ -23,7 +23,6 @@
     }
 
     &__nav {
-        margin-right: 128px;
 
         ul {
             list-style: none;
@@ -94,11 +93,15 @@
 
 @media (max-width: 767px) {
     .header {
-        margin-top: 5px;
+        margin-top: 15px;
         backdrop-filter: blur(3px);
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+
+        &__logo {
+            margin-left: 50px;
+        }
 
 
         &__nav {
@@ -123,8 +126,7 @@
 
 
         .mobile-menu {
-            margin-left: 150px;
-            margin-right: -200px;
+            margin-right: -150px;
             span {
                 display: block;
             }

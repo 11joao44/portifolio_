@@ -67,7 +67,7 @@
         }
 
         &__photo {
-          background-image: url(/dist/images/photo.jpg);
+          background-image: url(../images/photo.jpg);
           background-position: center;
           background-size: cover;
           position: absolute;
@@ -222,12 +222,21 @@
     display: block;
     text-align: center;
     height: 100%;
+    margin-top: 20px;
 
     &__profile {
-      margin-top: -20%;
+      margin-top: -25%;
       margin-left: 8.5%;
-      transform: scale(60%); 
+      transform: scale(50%); 
       margin-bottom: 30px;
+
+      &__card {
+
+        &__back {
+          margin-top: 10px;
+          margin-left: -65px;
+        }
+      }
     }
 
     &__content {
