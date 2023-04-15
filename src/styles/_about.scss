@@ -4,7 +4,7 @@
     gap: 30px;
     grid-template-columns: repeat(3, 330px);
     justify-content: center;
-    padding: 3.6vw;
+    padding: 5vw;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 20px;
 
@@ -12,17 +12,17 @@
         grid-column: 1/-1;
         text-align: center;
 
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 15px;
+        }
+
         p {
             color: #bdbdbd;
             font-size: 1.6rem;
             margin-bottom: 16px;
             position: relative;
             font-weight: 700;
-        }
-
-        h1 {
-            font-size: 4rem;
-            margin-bottom: 15px;
         }
 
         span {
@@ -94,6 +94,155 @@
             color: #e1e1e1;
             padding-right: 15px;
             font-size: 2.5rem;
+        }
+    }
+}
+
+@media (max-width: 1980px) {
+    .about {
+        gap: 5px;
+        margin-bottom: 10px;
+
+
+        &__header {
+
+            p {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+        }
+
+        &__photo {
+            width: 70%;
+        }
+
+        &__content {
+
+            &__text {
+
+                h1 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        &__info {
+
+            i {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .about {
+        overflow: hidden;
+        height: 100%;
+
+        &__header {
+            margin-bottom: 25px;
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        &__photo {
+            max-width: 45%;
+            margin-left: 150px;
+        }
+
+        &__content {
+            grid-column: 2/-1;
+
+            &__text {
+
+                p {
+                    width: 80%;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        &__info {
+            width: 80%;
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            i {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .about {
+        overflow: hidden;
+        height: 100%;
+
+        &__header {
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: .8rem;
+            }
+        }
+
+        &__photo {
+            max-width: 50%;
+            margin: 5% 128% 5%;
+        }
+
+        &__content {
+            grid-column: 1/-1;
+
+            &__text {
+                text-align: center;
+
+                p {
+                    width: 30%;
+                    margin-left: 35%;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        &__info {
+            display: block;
+            margin-left: 400px;
+
+            p {
+                font-size: 1rem;
+                margin-bottom: 10px;
+
+            }
+
+            i {
+                font-size: 1rem;
+            }
         }
     }
 }

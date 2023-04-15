@@ -8,23 +8,10 @@
   box-shadow: 1px 0 15px 10px rgba(0, 0, 0, 0.3);
   font-family: 'Poppins', sans-serif;
 
-  @media (max-width: 768px) {
-    display: block;
-    text-align: center;
-    min-height: 0;
-  }
-
   &__profile {
     position: relative;
     perspective: 1000px;
-    transform: scale(105%);
     margin-right: 80px;
-
-    @media (max-width: 768px) {
-      margin-right: 0;
-      margin-top: -80px;
-      transform: scale(60%);
-    }
 
 
     &__card {
@@ -117,10 +104,6 @@
     padding: 3vw;
     border-radius: 15px;
 
-    @media (max-width: 768px) {
-      margin-top: 100px;
-    }
-
     &__branding {
       max-width: 860px;
       width: 100%;
@@ -130,10 +113,6 @@
         display: flex;
         align-items: center;
 
-        @media (max-width: 768px) {
-          margin-top: 0;
-          transform: scale(50%);
-        }
 
         a {
           margin-right: 10px;
@@ -166,32 +145,112 @@
 
       &__text-1 {
         font-size: 4rem;
-
-        @media (max-width: 768px) {
-          font-size: 1em;
-        }
       }
 
       &__text-2 {
         margin: 20px 0;
         font-weight: 400;
         font-size: 1.2rem;
-
-        @media (max-width: 768px) {
-          font-size: 0.4em;
-        }
       }
 
       &__text-3 {
         font-weight: 200;
         font-size: 1.6rem;
         color: #a9a9a9;
+      }
+    }
+  }
+}
 
-        @media (max-width: 768px) {
-          font-size: 0.45em;
+@media (max-width: 1600px) {
+  .home {
+
+    &__profile {
+      transform: scale(85%); 
+    }
+
+    &__content {
+      transform: scale(95%);
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+
+  .home {
+    display: block;
+    text-align: center;
+    height: 100%;
+
+    &__profile {
+      margin-top: -10%;
+      margin-left: 23.5%;
+      transform: scale(60%); 
+    }
+
+    &__content {
+      margin-top: 25px;
+
+      &__branding {
+
+        &__social {
+          margin-left: 25%;
+          transform: scale(85%);
+        }
+
+        &__text-1 {
+          margin-top: 25px;
+          font-size: 2.5rem;
+        }
+
+        &__text-2 {
+          font-size: 1.2rem;
+          margin: 10px 0;
+        }
+
+        &__text-3 {
+          font-size: 1.8rem;
         }
       }
     }
   }
+}
 
+@media (max-width: 767px) {
+
+  .home {
+    display: block;
+    text-align: center;
+    height: 100%;
+
+    &__profile {
+      margin-top: -20%;
+      margin-left: 8.5%;
+      transform: scale(60%); 
+    }
+
+    &__content {
+      margin-top: 25px;
+
+      &__branding {
+
+        &__social {
+          transform: scale(70%);
+        }
+
+        &__text-1 {
+          font-size: 1.6rem;
+        }
+
+        &__text-2 {
+          font-size: 1rem;
+          margin: 10px 0;
+        }
+
+        &__text-3 {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
 }
