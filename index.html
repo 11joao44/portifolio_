@@ -26,20 +26,22 @@
     <!-- Cabeçalho -->
     <header class="header">
       <img class="header__logo" src="./dist/images/joao-logo.png" alt="LOGO">
-      <div class="mobile-menu">
-        <span class="line1"></span>
-        <span class="line2"></span>
-        <span class="line3"></span>
-      </div>
+      <div class="header__menu">
+        <div class="header__menu__bar"></div>
+        <div class="header__menu__bar"></div>
+        <div class="header__menu__bar"></div>
+      </div>      
       <nav class="header__nav">
-        <ul>
+        <ul class="header__nav__links">
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#tech">Tecnlogias</a></li>
           <li><a href="#Projetos">Projetos</a></li>
           <li><a href="#Sobre">Sobre</a></li>
+          <li><a href="#Contato">Contato</a></li>
         </ul>
       </nav>
     </header>
+    
 
     <!-- Home com descrição -->
     <section class="home" id="inicio">
@@ -381,15 +383,35 @@
         </div>
       </div>
     </div>
-    
-    <div class="contact__me">
+  
+  </section>
 
+  <section id="Contato">
+
+    <div class="contact__me">
+      <h2>Contato</h2>
+      <div>
+        <span></span>
+      </div>
+      <form action="https://api.staticforms.xyz/submit" method="post">
+        <label>Nome</label>
+        <input type="text" name="nome" placeholder="Digite seu nome" autocomplete="off" required>
+        <label>E-mail</label>
+        <input type="email" name="email" placeholder="Digite seu E-mail" autocomplete="off" required>
+        <label>Mensagem</label>
+        <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+
+        <input type="hidden" name="redirectTo" value="#home">
+        <input type="hidden" name="accessKey" value="5bc5bbc9-9647-4035-bcd5-1c6869507ef5">
+      </form>
     </div>
+    
   </section>
 
   <footer>
-    
-  </footer>
+    <p>&copy; 2023 João Pedro. Todos os direitos reservados.</p>
+  </footer>  
 
   <!-- Frameworks e Script -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

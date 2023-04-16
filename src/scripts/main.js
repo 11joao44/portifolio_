@@ -118,10 +118,6 @@ $(document).ready(function () {
     $('.carrousel').slideDown('slow');
     $('.tx-start').fadeOut(500);
   });
-
-  $('.mobile-menu').click(function () {
-    $('nav').slideToggle()
-  })
 });
 
 
@@ -154,4 +150,10 @@ images.forEach((image) => {
   });
 });
 
+const hamburguer = document.querySelector('.header__hamburguer');
+const navLinks = document.querySelector('.header__nav__links');
 
+hamburguer.addEventListener('click', () => {
+  hamburguer.classList.toggle('active');
+  navLinks.classList.toggle('active');
+});
