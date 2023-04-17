@@ -109,18 +109,24 @@ let swiper = new Swiper(".mySwiper", {
 
 // jquery //
 $(document).ready(function () {
+
+  // apresenta o carrousel de imagens //
   $('.tech__description__list__item').click(function () {
     $('.carrousel').slideDown('slow');
     $('.tx-start').fadeOut(500);
   });
-});
 
-
-$(document).ready(function () {
+  // adiciona descrição das tecnologias //
   $("li.tech__description__list__item img").click(function () {
     var texto = $(this).parent().data("text");
     $("p.tech__description__text").text(texto).fadeTo(250, 1);
   });
+
+  // Menu hamburguer //
+  $('#menu').click(function () {
+    $('.header__nav ul').slideToggle('slow')
+    $(this).toggleClass('fa-bars fa-x');
+  })
 });
 
 //-------------------------------------------------------------------------//
@@ -144,6 +150,8 @@ images.forEach((image) => {
     });
   });
 });
+
+//-------------------------------------------------------------------------//
 
 
 // interação com o formulario e mensagem de agradecimento //
