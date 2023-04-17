@@ -2,7 +2,7 @@
     height: 100vh;
 
     &__filters {
-        font-size: 2rem;
+        font-size: 4rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -17,7 +17,7 @@
         display: grid;
         padding-top: 40px;
         justify-content: center;
-        grid-template-columns: repeat(3, 640px);
+        grid-template-columns: repeat(3, 580px);
     }
 
     &__card {
@@ -56,7 +56,7 @@
     transition: 1s ease-in-out;
     font-family: 'Roboto', sans-serif;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.85);
 
     img {
         width: 640px;

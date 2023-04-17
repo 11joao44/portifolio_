@@ -2,6 +2,7 @@
     display: grid;
     height: 100vh;
     gap: 30px;
+    margin-bottom: 5%;
     grid-template-columns: repeat(3, 330px);
     justify-content: center;
     padding: 5.6vw;
@@ -16,6 +17,7 @@
     }
 
     &__header {
+        margin-top: -5%;
         grid-column: 1/-1;
         text-align: center;
         text-transform: uppercase;
@@ -40,7 +42,7 @@
         filter: blur(0);
 
         &:hover {
-            transition: .5s ease-in;
+            transition: .2s ease-in;
             filter: blur(1.5px);
         }
     }
@@ -106,6 +108,7 @@
 
 
         &__header {
+            margin: 0;
 
             p {
                 font-size: 1.2rem;

@@ -100,11 +100,6 @@ let swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
       spaceBetween: 1,
     },
-    1600: {
-      centeredSlides: true,
-      slidesPerView: 2.5,
-      spaceBetween: 600,
-    },
   },
 });
 
@@ -130,7 +125,7 @@ $(document).ready(function () {
 
 //-------------------------------------------------------------------------//
 
-// seleciona todas as imagens dentro dos elementos "work__card"
+// seleciona todas as imagens dentro dos elementos "work__card" //
 const images = document.querySelectorAll('.work__card img');
 
 // itera sobre as imagens selecionadas
@@ -150,10 +145,17 @@ images.forEach((image) => {
   });
 });
 
-const hamburguer = document.querySelector('.header__hamburguer');
-const navLinks = document.querySelector('.header__nav__links');
 
-hamburguer.addEventListener('click', () => {
-  hamburguer.classList.toggle('active');
-  navLinks.classList.toggle('active');
-});
+// interação com o formulario e mensagem de agradecimento //
+
+const form = document.querySelector('form');
+const inputNome = document.getElementById('inputNome');
+const spanNome = document.getElementById('nomeUsuario');
+
+function atualizarMensagem(event) {
+  spanNome.innerHTML = inputNome.value;
+}
+
+form.addEventListener('submit', atualizarMensagem);
+
+
