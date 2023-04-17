@@ -131,34 +131,34 @@
     .work__desc-overlay {
 
         img {
-            width: 300px;
+            width: 720px;
         }
 
         h3 {
-            font-size: 1.5rem;
+            font-size: 2.5rem;
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1.8rem;
             width: 80%;
         }
 
         ul {
 
             li {
-                font-size: 1.2rem;
+                font-size: 1.6rem;
 
                 span {
     
                     img {
-                        width: 15px;
+                        width: 20px;
                         margin-bottom: -5px;
                     }
                 }
             }
 
             a {
-                font-size: 1rem;
+                font-size: 1.6rem;
             }
         }
     }
@@ -166,7 +166,7 @@
 
 @media (max-width: 1366px) {
     .work {
-        height: 100vh;
+        height: 100%;
 
         &__container {
             grid-template-columns: repeat(2, 330px);
@@ -176,21 +176,29 @@
     .work__desc-overlay {
 
         img {
-            width: 720px;
+            width: 480px;
         }
 
         h3 {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
         }
 
         p {
-            font-size: 2rem;
+            font-size: 1.6rem;
         }
 
         ul {
 
             li {
                 font-size: 1.8rem;
+
+                span {
+
+                    img {
+                        width: 20px;
+                        margin-bottom: -5px;
+                    }
+                }
             }
 
             a {
@@ -205,7 +213,7 @@
         height: 100%;
 
         &__container {
-            grid-template-columns: repeat(1, 330px);
+            grid-template-columns: repeat(1, 280px);
             margin-bottom: 100px;
         }
     }
@@ -213,15 +221,15 @@
     .work__desc-overlay {
 
         img {
-            width: 380px;
+            width: 330px;
         }
 
         h3 {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
         }
 
         p {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
 
         ul {

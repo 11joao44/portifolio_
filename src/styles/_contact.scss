@@ -10,6 +10,7 @@
     padding: 5.6vw;
     box-shadow: 1px 0 15px 15px rgba(0, 0, 0, 0.3);
     text-transform: uppercase;
+    overflow-x: hidden;
 
     span {
         display: block;
@@ -62,6 +63,24 @@
             &:hover {
                 opacity: 95%;
             }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #Contato {
+        
+
+        h2 {
+            font-size: 1.6rem;
+        }
+
+        span {
+            width: 30%;
+        }
+
+        form {
+            width: 360px;
         }
     }
 }

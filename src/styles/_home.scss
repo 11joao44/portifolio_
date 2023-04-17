@@ -162,17 +162,12 @@
   }
 }
 
-@media (max-width: 1600px) {
-  .home {
-
-    &__profile {
-      transform: scale(85%); 
+@media (max-width: 1980px) {
+    .home {
+      &__profile {
+        transform: scale(80%);
+      }
     }
-
-    &__content {
-      transform: scale(95%);
-    }
-  }
 }
 
 @media (max-width: 1023px) {
@@ -180,12 +175,13 @@
   .home {
     display: block;
     text-align: center;
-    height: 100%;
+    margin-top: 100px;
 
     &__profile {
-      margin-top: -10%;
-      margin-left: 23.5%;
       transform: scale(60%); 
+      margin: -80px auto 0;
+      display: flex;
+      justify-content: center;
     }
 
     &__content {
@@ -224,10 +220,10 @@
     height: 100%;
     margin-top: 50px;
 
+
     &__profile {
-      transform: scale(50%); 
-      margin-top: -15%;
-      margin-left: 12.5%;
+      transform: scale(50%);
+      margin-top: -80px; 
 
       &__card {
 
