@@ -152,18 +152,3 @@ images.forEach((image) => {
 });
 
 //-------------------------------------------------------------------------//
-
-
-// interação com o formulario e mensagem de agradecimento //
-
-const form = document.querySelector('form');
-const inputNome = document.getElementById('inputNome');
-const spanNome = document.getElementById('nomeUsuario');
-
-function atualizarMensagem(event) {
-  spanNome.innerHTML = inputNome.value;
-}
-
-form.addEventListener('submit', atualizarMensagem);
-
-
