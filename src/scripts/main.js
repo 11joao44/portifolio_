@@ -127,6 +127,8 @@ $(document).ready(function () {
     $('.header__nav ul').slideToggle('slow')
     $(this).toggleClass('fa-bars fa-x');
   })
+
+  $('work__card__cover')
 });
 
 //-------------------------------------------------------------------------//
